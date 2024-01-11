@@ -2,6 +2,8 @@
 
 The Stahl USB dongle provides secure long-term storage for about 2000 characters of text. Simply plug the device into your computer and open any serial communications program that supports VT100 emulation (PuTTY, Tera Term, Minicom, screen, etc.) in order to access the built-in text editor.
 
+![Stahl](https://github.com/machdyne/stahl/blob/70c873443f540fe50ba8bddf3de0b9b58c02abc7/stahl.png)
+
 This repo contains schematics, firmware and a 3D-printable case.
 
 Find usage instructions and more information on the [Stahl product page](https://machdyne.com/product/stahl-secure-storage-device/).
