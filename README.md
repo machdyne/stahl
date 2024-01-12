@@ -20,6 +20,7 @@ You can then use the following scripts to program the latest firmware:
 
 ```
 $ cd firmware/images
+$ sudo bash ../scripts/DFU-ERASE.sh
 $ sudo bash ../scripts/DFU-PROG.sh
 $ sudo bash ../scripts/DFU-RESET.sh
 ```
