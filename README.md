@@ -48,7 +48,7 @@ If using a USBASP programmer, you can restore the bootloader with:
 
 ```
 $ cd firmware/images
-$ ../scripts/PROG.sh
+$ sudo bash ../scripts/PROG.sh
 ```
 
 This header also provides SPI access to the FRAM if you short B2, allowing the FRAM contents to be recovered, if for example the MCU were to become inoperable.
