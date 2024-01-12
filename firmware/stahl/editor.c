@@ -97,7 +97,6 @@ char editor_decode(int addr, char cc);
 void editor_flashlight(void);
 void editor_help(void);
 void editor_dfu(void);
-void editor_boot_check(void) ATTR_INIT_SECTION(3);
 
 #define BOOT_KEY 0xb007b007
 #define BOOTLOADER_ADDR 0x7000
@@ -222,13 +221,6 @@ void editor_help(void) {
 
 }
 
-void editor_boot_check(void) {
-	if ((MCUSR & (1 << WDRF)) && (boot_key == BOOT_KEY)) {
-		boot_key = 0;
-		((void (*)(void))BOOTLOADER_ADDR)();
-	}
-}
-
 void editor_dfu(void) {
 
 	char confirm[8];
@@ -248,10 +240,10 @@ void editor_dfu(void) {
 		return;
 	}
 
+	// reset will trigger the bootloader
 	USB_Disable();
 	cli();
-	Delay_MS(2000);
-	boot_key = BOOT_KEY;
+	Delay_MS(1000);
 	wdt_enable(WDTO_250MS);
 	for (;;);
 }

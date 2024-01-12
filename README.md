@@ -14,14 +14,14 @@ We consider the device "secure" in that, in theory the data should be preserved 
 
 ## Firmware
 
-The firmware can be updated over DFU by pressing CTRL-Y in the text editor to enter DFU mode.
+The firmware can be updated over DFU by pressing CTRL-Y in the text editor to enter DFU mode. You can also enter DFU mode by shorting B1 when power is applied.
 
 You can then use the following scripts to program the latest firmware:
 
 ```
 $ cd firmware/images
-$ ../scripts/DFU-PROG.sh
-$ ../scripts/DFU-RESET.sh
+$ sudo bash ../scripts/DFU-PROG.sh
+$ sudo bash ../scripts/DFU-RESET.sh
 ```
 
 You can build the firmware from source, if you have the avr-gcc toolchain installed:

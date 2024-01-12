@@ -36,7 +36,7 @@
 #ifndef _STAHL_H_
 #define _STAHL_H_
 
-		#define STAHL_VERSION "0.0.1"
+		#define STAHL_VERSION "0.0.2"
 
 	/* Includes: */
 		#include <avr/io.h>
