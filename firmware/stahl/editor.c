@@ -279,7 +279,7 @@ void editor_set_password(void) {
 
 	uint32_t key_seed = 0x12345678;
 	for (int i = 0; i < strlen(password); i++) {
-		key_seed ^= password[i];
+		key_seed += password[i];
 	}
 
 	uint32_t state[1] = { key_seed };

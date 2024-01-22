@@ -12,6 +12,8 @@ Find usage instructions and more information on the [Stahl product page](https:/
 
 We consider the device "secure" in that, in theory the data should be preserved longer than with some other mediums. Please do not rely solely on the included password-based encryption for sensitive data. Please keep multiple copies of your important data.
 
+If you're using encryption, updating the firmware to a newer version may change the encryption algorithm, resulting in what looks like corrupt data, but you should be able to downgrade to the previous version to access the data.
+
 ## Firmware
 
 The firmware can be updated over DFU by pressing CTRL-Y in the text editor to enter DFU mode. You can also enter DFU mode by shorting B1 when power is applied.
